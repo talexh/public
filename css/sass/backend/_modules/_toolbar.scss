@@ -1,0 +1,58 @@
+/*
+*
+* TOOLBAR PART
+*/
+
+.toolbar-nav {
+
+    position: fixed;
+    right: 40px;
+    top: 50px;
+    list-style: none;
+    float: right;
+    padding: 10px;
+	z-index: 1001;
+	border: 0;
+	
+    @include box_sizing();
+
+    @include border_radius(0px 0px 5px 5px);
+    background-color: #222;
+    border-color: #080808;
+    background-image: -webkit-linear-gradient(top,#3c3c3c 0,#222 100%);
+    background-image: -o-linear-gradient(top,#3c3c3c 0,#222 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#3c3c3c),to(#222));
+    background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+
+    @include box_shadow (3px, 3px, 5px, 0px);
+
+    li {
+        @include transition_all(0.3s);
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #999;
+        @include border_radius(3px);
+
+        &:hover {
+            @include transition_all(0.4s);
+            background: #222;
+            border: 1px solid #eee;
+            @include border_radius(3px);
+        }
+
+        a {
+            font-size: 18px;
+            color: #666;
+            &.btn {
+                padding:4px 8px 0px 8px;
+            }
+            &:hover {
+                @include transition_all(0.4s);
+                color: #fff !important;
+            }
+        }
+    }
+}

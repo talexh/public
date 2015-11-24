@@ -1,0 +1,214 @@
+@mixin transition_bg_color {
+	-webkit-transition: background 0.2s ease-in, color 0.2s ease-in;
+	-moz-transition: background 0.2s ease-in, color 0.2s ease-in;
+	-o-transition: background 0.2s ease-in, color 0.2s ease-in;
+	-ms-transition: background 0.2s ease-in, color 0.2s ease-in;
+	transition: background 0.2s ease-in, color 0.2s ease-in;
+}
+
+@mixin transition_opacity {
+	-webkit-transition: opacity 0.4s ease-in;
+	-moz-transition: opacity 0.4s ease-in;
+	-o-transition: opacity 0.4s ease-in;
+	-ms-transition: opacity 0.4s ease-in;
+	transition: opacity 0.4s ease-in;
+}
+
+@mixin opacity_element($val) {
+	-webkit-opacity: $val;
+	-moz-opacity: $val;
+	-o-opacity: $val;
+	-ms-opacity: $val;
+	opacity: $val;
+}
+
+@mixin transition_all ($val){
+	-webkit-transition: all $val ease-in;
+	-moz-transition: all $val ease-in;
+	-o-transition: all $val ease-in;
+	-ms-transition: all $val ease-in;
+	transition: all $val ease-in;
+}
+
+@mixin transition ($val){
+	-webkit-transition: $val ease-in;
+	-moz-transition: $val ease-in;
+	-o-transition: $val ease-in;
+	-ms-transition: $val ease-in;
+	transition: $val ease-in;
+}
+
+@mixin transition_delay_all ($val){
+	-webkit-transition-delay: $val;
+	-moz-transition-delay: $val;
+	-o-transition-delay: $val;
+	-ms-transition-delay: $val;
+	transition-delay: $val;
+}
+
+@mixin transition_maxHeight ($val){
+	-webkit-transition: max-height $val ease-in;
+	-moz-transition: max-height $val ease-in;
+	-o-transition: max-height $val ease-in;
+	-ms-transition: max-height $val ease-in;
+	transition: max-height $val ease-in;
+}
+
+@mixin transition_transform {
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	-ms-transition: -moz-transform 0.3s;
+	-o-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+@mixin transition_transform ($val){
+	-webkit-transition: -webkit-transform $val;
+	-moz-transition: -moz-transform $val;
+	-ms-transition: -moz-transform $val;
+	-o-transition: -moz-transform $val;
+	transition: transform $val;
+}
+
+@mixin transition_color {
+	-webkit-transition: color 0.2s ease-in;
+	-moz-transition: color 0.2s ease-in;
+	-o-transition: color 0.2s ease-in;
+	-ms-transition: color 0.2s ease-in;
+	transition: color 0.2s ease-in;
+}
+
+@mixin transition_bg_and_color {
+	-webkit-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+	-moz-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+	-o-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+	-ms-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+	transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+@mixin reset_transition {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	transition: none;
+}
+
+@mixin transform ($x, $y ){
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-o-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+
+@mixin transform3d ($x, $y, $z ){
+	-webkit-transform: translate3d($x, $y, $z);
+	-moz-transform: translate3d($x, $y, $z);
+	-ms-transform: translate3d($x, $y, $z);
+	-o-transform: translate3d($x, $y, $z);
+	transform: translate3d($x, $y, $z);
+}
+
+@mixin rotate ($val){
+	-webkit-transform: rotate($val);
+	-moz-transform: rotate($val);
+	-o-transform: rotate($val);
+	-ms-transform: rotate($val);
+	transform: rotate($val);
+}
+
+@mixin scale ($originX, $originY ){
+	-webkit-transform: scale($originX, $originY);
+	-moz-transform: scale($originX, $originY);
+	-o-transform: scale($originX, $originY);
+	-ms-transform: scale($originX, $originY);
+	transform: scale($originX, $originY);
+	-webkit-transform-origin: $originX $originY;
+	-moz-transform-origin: $originX $originY;
+	-ms-transform-origin: $originX $originY;
+	-o-transform-origin: $originX $originY;
+	transform-origin: $originX $originY;
+}
+
+@mixin text_shadow ($val){
+	-webkit-text-shadow: $val;
+	-moz-text-shadow: $val;
+	-ms-text-shadow: $val;
+	-o-text-shadow: $val;
+	text-shadow: $val;
+}
+
+@mixin box_shadow ($val1, $val2, $val3, $val4, $r:125,$g:120,$b:120,$o:0.54){
+	-webkit-box-shadow: $val1 $val2 $val3 $val4 rgba($r,$g,$b,$o);
+	-moz-box-shadow: $val1 $val2 $val3 $val4 rgba($r,$g,$b,$o);
+	-ms-box-shadow: $val1 $val2 $val3 $val4 rgba($r,$g,$b,$o);
+	-o-box-shadow: $val1 $val2 $val3 $val4 rgba($r,$g,$b,$o);
+	box-shadow: $val1 $val2 $val3 $val4 rgba($r,$g,$b,$o);
+}
+
+@mixin border_radius ($val: 5px){
+	-webkit-border-radius: $val;
+	-moz-border-radius: $val;
+	-ms-border-radius: $val;
+	-o-border-radius: $val;
+	border-radius: $val;
+}
+
+@mixin box_sizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin arrow_base {
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	border-style: solid;
+}
+
+@mixin arrow_right ($width, $color ){
+	@include arrow_base;
+	border-width: $width;
+	border-color: transparent transparent transparent $color;
+}
+
+@mixin arrow_left ($width, $color ){
+	@include arrow_base;
+	border-width: $width;
+	border-color: transparent $color transparent transparent;
+}
+
+@mixin arrow_up ($width, $color ){
+	@include arrow_base;
+	border-width: $width;
+	border-color: $color transparent transparent transparent;
+}
+
+@mixin arrow_down ($width, $color ){
+	@include arrow_base;
+	border-width: $width;
+	border-color: transparent transparent $color transparent;
+}
+
+@mixin clear_fix {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 1px;
+	clear: both;
+}
+
+@mixin background-gradient ($color1, $color2 ){
+	background-image: -ms-linear-gradient(bottom, $color1 0%, $color2 100%);
+	background-image: -moz-linear-gradient(bottom, $color1 0%, $color2 100%);
+	background-image: -o-linear-gradient(bottom, $color1 0%, $color2 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color1),
+		color-stop(1, $color2) );
+	background-image: -webkit-linear-gradient(bottom, $color1 0%, $color2 100%);
+	background-image: linear-gradient(to bottom, $color1 0%, $color2 100%);
+}
