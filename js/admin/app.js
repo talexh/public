@@ -9,8 +9,14 @@ $(document).ready(function(e){
 			window.location.href = href;
 		}
 	});*/
-	Util.ajaxCall('/admin/communicate', 'post', 'uuid=fdsafdsafdsfdsaf', 'json', function(res){
+	
+	// This is sample to get log 
+	Util.ajaxCall('/app/communicate/app_1_logger', 'get', {}, 'json', function(res){
+		//var data = JSON.parse(res);
 		console.log(res);
+	});
+	Util.ajaxCall('/app/communicate/app_1_logger4all', 'get', {}, 'json', function(res){
+		console.log(res.log4AllData);
 	});
 	// Handle click delete
 	Util.handleClick('.actions .delete', function($me){
