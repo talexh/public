@@ -119,9 +119,9 @@
   border-radius: 0px 0px 5px 5px;
   background-color: #222;
   border-color: #080808;
-  background-image: -webkit-linear-gradient(top, #3c3c3c 0, #222 100%);
-  background-image: -o-linear-gradient(top, #3c3c3c 0, #222 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222));
+  background-image: -webkit-linear-gradient(top, #3c3c3c 0, #222222 100%);
+  background-image: -o-linear-gradient(top, #3c3c3c 0, #222222 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#222222));
   background-image: linear-gradient(to bottom, #3c3c3c 0%, #222222 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
