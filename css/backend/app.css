@@ -106,9 +106,10 @@ body {
 
 .nav-sidebar>li>a {
 	font-weight: bold;
+	border-bottom: 1px solid #fff;
 }
 
-.nav-sidebar>.active>a, .nav-sidebar>.active>a:hover, .nav-sidebar>.active>a:focus {
+.nav-sidebar>.active>a, .nav-sidebar>.active>a:hover, .nav-sidebar>.active>a:focus, .nav-sidebar a:hover {
 	color: #fff;
 	background-color: #428bca;
 }
